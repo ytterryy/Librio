@@ -1,4 +1,7 @@
 # Library App
+
+![Book Management](images/IMG_6126.PNG)
+
 ## PDF-документація
 
 [Документація про проєкт Librio (PDF)](Librio.pdf)
