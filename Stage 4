@@ -59,3 +59,9 @@ Librio/
     ├── ViewModels/
     ├── Commands/
     └── Converters/
+
+Frameworks нашого проєкту:
+
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.Design
