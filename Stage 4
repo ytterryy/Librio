@@ -15,3 +15,47 @@
 Це підвищує надійність та полегшує налагодження.
 
 Фінальним кроком стало оновлення GitHub-репозиторію: ми додали всі зміни до коду, структури проєкту та підготували звіт за цим етапом.
+
+
+
+Базові архітектурні структури нашого проєкту: 
+
+Librio/
+├── Librio.Domain/              # Ядро системи
+│   ├── Entities/
+│   │   ├── Book.cs
+│   │   ├── User.cs
+│   │   ├── ReadingGoal.cs
+│   │   └── Comment.cs
+│   ├── Enums/
+│   │   ├── ReadingStatus.cs
+│   │   └── Genre.cs
+│   └── ValueObjects/
+│       └── Rating.cs
+│
+├── Librio.Application/         # Бізнес-логіка
+│   ├── Interfaces/
+│   │   ├── IBookRepository.cs
+│   │   ├── IUserRepository.cs
+│   │   └── IExportService.cs
+│   ├── Services/
+│   │   ├── BookService.cs
+│   │   ├── StatisticsService.cs
+│   │   └── RecommendationService.cs
+│   ├── DTOs/
+│   └── Validators/
+│
+├── Librio.Infrastructure/      # Технічна реалізація
+│   ├── Data/
+│   │   ├── LibrioDbContext.cs
+│   │   └── Repositories/
+│   ├── Services/
+│   │   ├── ExportService.cs
+│   │   └── FileService.cs
+│   └── Logging/
+│
+└── Librio.Desktop/            # Presentation (WPF/MAUI)
+    ├── Views/
+    ├── ViewModels/
+    ├── Commands/
+    └── Converters/
